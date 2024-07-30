@@ -17,7 +17,7 @@ export const CandidatesData: Candidate[] = [
   {
     id: '1',
     task: 'Clean beds',
-    assignedTo: 'Kieran',
+    assignedTo: 'Kiran',
     assignee: 'Linton',
     Status: 'In Review',
     priority: 'Low',
