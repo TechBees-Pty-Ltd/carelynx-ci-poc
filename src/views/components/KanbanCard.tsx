@@ -1,5 +1,5 @@
 import React from 'react';
-import { Draggable } from 'react-beautiful-dnd';
+import { Draggable } from '@hello-pangea/dnd';
 
 interface KanbanCardProps {
   item: {
@@ -87,7 +87,7 @@ const KanbanCard: React.FC<KanbanCardProps> = ({ item, index }) => {
             </div>
           </div>
           <div className='mt-4'>
-            <span className='inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800'>
+            <span className='inline-flex items-center px-3 py-1 rounded-full font-medium bg-green-100 text-green-800'>
               Risk: {item.riskScore}
             </span>
           </div>

@@ -41,7 +41,7 @@ const Sidebar: React.FC = ({ content }) => {
                       <li>
                         <a
                           href='#'
-                          className='group flex gap-x-3 rounded-md bg-gray-50 p-2 text-sm font-semibold leading-6 text-indigo-600'
+                          className='group flex gap-x-3 rounded-md bg-gray-50 p-2 font-semibold leading-6 text-indigo-600'
                         >
                           <svg
                             className='h-6 w-6 shrink-0 text-indigo-600'
@@ -63,7 +63,7 @@ const Sidebar: React.FC = ({ content }) => {
                       <li>
                         <a
                           href='#'
-                          className='group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-indigo-600'
+                          className='group flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-indigo-600'
                         >
                           <svg
                             className='h-6 w-6 shrink-0 text-gray-400 group-hover:text-indigo-600'
@@ -85,7 +85,7 @@ const Sidebar: React.FC = ({ content }) => {
                       <li>
                         <a
                           href='#'
-                          className='group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-indigo-600'
+                          className='group flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-indigo-600'
                         >
                           <svg
                             className='h-6 w-6 shrink-0 text-gray-400 group-hover:text-indigo-600'
@@ -107,7 +107,7 @@ const Sidebar: React.FC = ({ content }) => {
                       <li>
                         <a
                           href='#'
-                          className='group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-indigo-600'
+                          className='group flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-indigo-600'
                         >
                           <svg
                             className='h-6 w-6 shrink-0 text-gray-400 group-hover:text-indigo-600'
@@ -147,7 +147,7 @@ const Sidebar: React.FC = ({ content }) => {
                   <li>
                     <a
                       href='/carelynx-ci-poc/dashboard'
-                      className={`group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 ${
+                      className={`group flex gap-x-3 rounded-md p-2 font-semibold leading-6 ${
                         isActive('/carelynx-ci-poc/dashboard')
                           ? 'bg-gray-50 text-indigo-600'
                           : 'text-gray-700 hover:bg-gray-50 hover:text-indigo-600'
@@ -177,7 +177,7 @@ const Sidebar: React.FC = ({ content }) => {
                   <li>
                     <a
                       href='/carelynx-ci-poc/board'
-                      className={`group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 ${
+                      className={`group flex gap-x-3 rounded-md p-2 font-semibold leading-6 ${
                         isActive('/carelynx-ci-poc/board') ? 'text-indigo-600 bg-gray-50' : 'text-gray-700 hover:bg-gray-50 hover:text-indigo-600'
                       }`}
                     >
@@ -203,7 +203,7 @@ const Sidebar: React.FC = ({ content }) => {
                   <li>
                     <a
                       href='/carelynx-ci-poc/backlog'
-                      className={`group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 ${
+                      className={`group flex gap-x-3 rounded-md p-2 font-semibold leading-6 ${
                         isActive('/carelynx-ci-poc/backlog') ? 'text-indigo-600 bg-gray-50' : 'text-gray-700 hover:bg-gray-50 hover:text-indigo-600'
                       }`}
                     >
@@ -229,7 +229,7 @@ const Sidebar: React.FC = ({ content }) => {
                   <li>
                     <a
                       href='/carelynx-ci-poc/admin'
-                      className={`group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 ${
+                      className={`group flex gap-x-3 rounded-md p-2 font-semibold leading-6 ${
                         isActive('/carelynx-ci-poc/admin') ? 'text-indigo-600 bg-gray-50' : 'text-gray-700 hover:bg-gray-50 hover:text-indigo-600'
                       }`}
                     >
@@ -257,7 +257,7 @@ const Sidebar: React.FC = ({ content }) => {
               <li className='mt-auto'>
                 <a
                   href='#'
-                  className='group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-indigo-600'
+                  className='group -mx-2 flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-indigo-600'
                 >
                   <svg
                     className='h-6 w-6 shrink-0 text-gray-400 group-hover:text-indigo-600'
@@ -287,7 +287,7 @@ const Sidebar: React.FC = ({ content }) => {
       </div>
 
       <div className='lg:pl-72'>
-        <div className='sticky top-0 z-40 lg:mx-auto lg:max-w-7xl lg:px-8'>
+        <div className='sticky top-0 z-40 lg:mx-auto lg:max-w-8xl lg:px-8'>
           <div className='flex h-16 items-center gap-x-4 border-b border-gray-200 bg-white px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-0 lg:shadow-none'>
             <button type='button' className='-m-2.5 p-2.5 text-gray-700 lg:hidden'>
               <span className='sr-only'>Open sidebar</span>
@@ -374,7 +374,7 @@ const Sidebar: React.FC = ({ content }) => {
                     />
                     <span className='hidden lg:flex lg:items-center'>
                       <span
-                        className='ml-4 text-sm font-semibold leading-6 text-gray-900'
+                        className='ml-4 font-semibold leading-6 text-gray-900'
                         aria-hidden='true'
                       >
                         Anonymous User
@@ -405,7 +405,7 @@ const Sidebar: React.FC = ({ content }) => {
                     >
                       <a
                         href='#'
-                        className='block px-3 py-1 text-sm leading-6 text-gray-900'
+                        className='block px-3 py-1 leading-6 text-gray-900'
                         role='menuitem'
                         tabIndex='-1'
                         id='user-menu-item-0'
@@ -414,7 +414,7 @@ const Sidebar: React.FC = ({ content }) => {
                       </a>
                       <a
                         href='#'
-                        className='block px-3 py-1 text-sm leading-6 text-gray-900'
+                        className='block px-3 py-1 leading-6 text-gray-900'
                         role='menuitem'
                         tabIndex='-1'
                         id='user-menu-item-1'
@@ -430,7 +430,7 @@ const Sidebar: React.FC = ({ content }) => {
         </div>
 
         <main className='py-10'>
-          <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>{content}</div>
+          <div className='mx-auto max-w-8xl px-4 sm:px-6 lg:px-8'>{content}</div>
         </main>
       </div>
     </div>
