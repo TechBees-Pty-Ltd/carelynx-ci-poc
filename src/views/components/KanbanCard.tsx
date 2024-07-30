@@ -5,10 +5,13 @@ interface KanbanCardProps {
   item: {
     id: string;
     task: string;
-    assigned_To: string;
+    assignedTo: string;
     assignee: string;
     priority: string;
-    due_Date: string;
+    dueDate: string;
+    riskScore: string;
+    riskProbability: string;
+    riskImpact: string;
   };
   index: number;
 }
@@ -26,7 +29,7 @@ const KanbanCard: React.FC<KanbanCardProps> = ({ item, index }) => {
           <div className='flex justify-between items-center'>
             <div className='flex items-center'>
               <div className='w-10 h-10 bg-blue-600 text-white flex items-center justify-center rounded-full'>
-                {item.assigned_To.charAt(0).toUpperCase()}
+                {item.assignedTo.charAt(0).toUpperCase()}
               </div>
             </div>
             <div className='flex space-x-2'>
@@ -66,7 +69,7 @@ const KanbanCard: React.FC<KanbanCardProps> = ({ item, index }) => {
             </div>
           </div>
           <div className='mt-2'>
-            <h2 className='text-lg font-bold text-gray-900'>{item.assigned_To}</h2>
+            <h2 className='text-lg font-bold text-gray-900'>{item.assignedTo}</h2>
             <p className='text-gray-600'>{item.task}</p>
           </div>
           <div className='mt-4 grid grid-cols-3 gap-4'>
@@ -80,12 +83,12 @@ const KanbanCard: React.FC<KanbanCardProps> = ({ item, index }) => {
             </div>
             <div>
               <div className='text-gray-600'>Due Date</div>
-              <div className='font-bold text-gray-900'>{item.due_Date}</div>
+              <div className='font-bold text-gray-900'>{item.dueDate}</div>
             </div>
           </div>
           <div className='mt-4'>
             <span className='inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800'>
-              Qty:7
+              Risk: {item.riskScore}
             </span>
           </div>
         </div>

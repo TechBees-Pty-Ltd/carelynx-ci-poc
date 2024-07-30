@@ -8,10 +8,10 @@ interface Column {
   items: {
     id: string;
     task: string;
-    assigned_To: string;
+    assignedTo: string;
     assignee: string;
     priority: string;
-    due_Date: string;
+    dueDate: string;
   }[];
 }
 
