@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css'
 import Sidebar from './views/Sidebar'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -11,6 +12,8 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/" element={<Sidebar content={<Dashboard />} />} />
+        <Route path="carelynx-ci-poc" element={<Sidebar content={<Dashboard />} />} />
         <Route path="carelynx-ci-poc/dashboard" element={<Sidebar content={<Dashboard />} />} />
         <Route path="carelynx-ci-poc/board" element={<Sidebar content={<Kanban />} />} />
         <Route path="carelynx-ci-poc/backlog" element={<Sidebar content={<Backlog />} />} />
