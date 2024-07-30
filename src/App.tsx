@@ -1,13 +1,22 @@
 import './App.css'
 import Sidebar from './views/Sidebar'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Dashboard from './views/components/Dashboard';
+import Kanban from './views/components/Kanban';
+import Backlog from './views/components/Backlog';
+import Admin from './views/components/Admin';
 
 function App() {
 
   return (
-    <>
-      <Sidebar />
-      <h1 className="text-4xl font-bold">Landing Page for CI</h1>
-    </>
+    <Router>
+      <Routes>
+        <Route path="carelynx-ci-poc/dashboard" element={<Sidebar content={<Dashboard />} />} />
+        <Route path="carelynx-ci-poc/board" element={<Sidebar content={<Kanban />} />} />
+        <Route path="carelynx-ci-poc/backlog" element={<Sidebar content={<Backlog />} />} />
+        <Route path="carelynx-ci-poc/admin" element={<Sidebar content={<Admin />} />} />
+      </Routes>
+    </Router>
   )
 }
 
