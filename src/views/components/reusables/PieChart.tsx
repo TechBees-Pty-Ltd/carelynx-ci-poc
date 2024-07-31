@@ -3,12 +3,12 @@ import Chart from 'react-apexcharts';
 
 const PieChart: React.FC = () => {
   const options = {
-    labels: ['Your Files', 'System'],
+    labels: ['In Progress', 'Done']
   };
 
   const series = [63, 25];
 
-  return <Chart options={options} series={series} type="pie" width="100%" />;
+  return <Chart options={options} series={series} type='pie' width='100%' />;
 };
 
 export default PieChart;

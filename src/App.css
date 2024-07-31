@@ -1,0 +1,22 @@
+.react-datepicker {
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.react-datepicker__header {
+  background-color: #3b82f6; /* Tailwind CSS blue-500 */
+  color: white;
+}
+
+.react-datepicker__day--selected {
+  background-color: #3b82f6; /* Tailwind CSS blue-500 */
+  color: white;
+}
+
+.react-datepicker__day--today {
+  background-color: #e0f2fe; /* Tailwind CSS blue-100 */
+}
+
+.react-datepicker__day:hover {
+  background-color: #bfdbfe; /* Tailwind CSS blue-200 */
+}

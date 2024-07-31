@@ -1,6 +1,6 @@
 import React from 'react';
 import Sidebar from './views/Sidebar';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Dashboard from './views/components/Dashboard';
 import Kanban from './views/Kanban';
 import Backlog from './views/components/Backlog';
@@ -10,12 +10,12 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<Sidebar content={<Dashboard />} />} />
-        <Route path='carelynx-ci-poc' element={<Sidebar content={<Dashboard />} />} />
-        <Route path='carelynx-ci-poc/dashboard' element={<Sidebar content={<Dashboard />} />} />
-        <Route path='carelynx-ci-poc/board' element={<Sidebar content={<Kanban />} />} />
-        <Route path='carelynx-ci-poc/backlog' element={<Sidebar content={<Backlog />} />} />
-        <Route path='carelynx-ci-poc/admin' element={<Sidebar content={<Admin />} />} />
+        <Route path='/' element={<Navigate to='/carelynx-ci-poc/dashboard' />} />
+        <Route path='carelynx-ci-poc' element={<Navigate to='/carelynx-ci-poc/dashboard' />} />
+        <Route path='/dashboard' element={<Sidebar content={<Dashboard />} />} />
+        <Route path='/board' element={<Sidebar content={<Kanban />} />} />
+        <Route path='/backlog' element={<Sidebar content={<Backlog />} />} />
+        <Route path='/admin' element={<Sidebar content={<Admin />} />} />
       </Routes>
     </Router>
   );

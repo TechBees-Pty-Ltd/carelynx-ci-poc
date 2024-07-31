@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
 import logo from '../assets/images/logo.svg';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
+import { AiOutlineDashboard } from 'react-icons/ai';
+import { BsKanban } from 'react-icons/bs';
+import { RiTodoLine } from 'react-icons/ri';
+import { RiAdminLine } from 'react-icons/ri';
+
 const Sidebar: React.FC = ({ content }) => {
   const location = useLocation();
   const [showProfileDropDown, toggleShowProfileDropDown] = useState(false);
+
+  console.log(location);
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -61,8 +68,8 @@ const Sidebar: React.FC = ({ content }) => {
                         </a>
                       </li>
                       <li>
-                        <a
-                          href='#'
+                        <Link
+                          to='/board'
                           className='group flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-indigo-600'
                         >
                           <svg
@@ -80,7 +87,7 @@ const Sidebar: React.FC = ({ content }) => {
                             />
                           </svg>
                           Board
-                        </a>
+                        </Link>
                       </li>
                       <li>
                         <a
@@ -145,112 +152,80 @@ const Sidebar: React.FC = ({ content }) => {
               <li>
                 <ul role='list' className='-mx-2 space-y-1'>
                   <li>
-                    <a
-                      href='/carelynx-ci-poc/dashboard'
+                    <Link
+                      to='/dashboard'
                       className={`group flex gap-x-3 rounded-md p-2 font-semibold leading-6 ${
-                        isActive('/carelynx-ci-poc/dashboard')
+                        isActive('/dashboard')
                           ? 'bg-gray-50 text-indigo-600'
                           : 'text-gray-700 hover:bg-gray-50 hover:text-indigo-600'
                       }`}
                     >
-                      <svg
+                      <AiOutlineDashboard
                         className={`h-6 w-6 shrink-0 ${
-                          isActive('/carelynx-ci-poc/dashboard')
+                          isActive('/dashboard')
                             ? 'text-indigo-600'
                             : 'text-gray-400 group-hover:text-indigo-600'
                         }`}
-                        fill='none'
-                        viewBox='0 0 24 24'
-                        strokeWidth='1.5'
-                        stroke='currentColor'
-                        aria-hidden='true'
-                      >
-                        <path
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                          d='M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25'
-                        />
-                      </svg>
+                      />
                       Dashboard
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href='/carelynx-ci-poc/board'
+                    <Link
+                      to='/board'
                       className={`group flex gap-x-3 rounded-md p-2 font-semibold leading-6 ${
-                        isActive('/carelynx-ci-poc/board') ? 'text-indigo-600 bg-gray-50' : 'text-gray-700 hover:bg-gray-50 hover:text-indigo-600'
+                        isActive('/board')
+                          ? 'text-indigo-600 bg-gray-50'
+                          : 'text-gray-700 hover:bg-gray-50 hover:text-indigo-600'
                       }`}
                     >
-                      <svg
+                      <BsKanban
                         className={`h-6 w-6 shrink-0 ${
-                          isActive('/carelynx-ci-poc/board') ? 'text-indigo-600' : 'text-gray-400 group-hover:text-indigo-600'
+                          isActive('/board')
+                            ? 'text-indigo-600'
+                            : 'text-gray-400 group-hover:text-indigo-600'
                         }`}
-                        fill='none'
-                        viewBox='0 0 24 24'
-                        strokeWidth='1.5'
-                        stroke='currentColor'
-                        aria-hidden='true'
-                      >
-                        <path
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                          d='M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z'
-                        />
-                      </svg>
+                      />
                       Board
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href='/carelynx-ci-poc/backlog'
+                    <Link
+                      to='/backlog'
                       className={`group flex gap-x-3 rounded-md p-2 font-semibold leading-6 ${
-                        isActive('/carelynx-ci-poc/backlog') ? 'text-indigo-600 bg-gray-50' : 'text-gray-700 hover:bg-gray-50 hover:text-indigo-600'
+                        isActive('/backlog')
+                          ? 'text-indigo-600 bg-gray-50'
+                          : 'text-gray-700 hover:bg-gray-50 hover:text-indigo-600'
                       }`}
                     >
-                      <svg
+                      <RiTodoLine
                         className={`h-6 w-6 shrink-0 ${
-                          isActive('/carelynx-ci-poc/backlog') ? 'text-indigo-600' : 'text-gray-400 group-hover:text-indigo-600'
+                          isActive('/backlog')
+                            ? 'text-indigo-600'
+                            : 'text-gray-400 group-hover:text-indigo-600'
                         }`}
-                        fill='none'
-                        viewBox='0 0 24 24'
-                        strokeWidth='1.5'
-                        stroke='currentColor'
-                        aria-hidden='true'
-                      >
-                        <path
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                          d='M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z'
-                        />
-                      </svg>
+                      />
                       Backlog
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href='/carelynx-ci-poc/admin'
+                    <Link
+                      to='/admin'
                       className={`group flex gap-x-3 rounded-md p-2 font-semibold leading-6 ${
-                        isActive('/carelynx-ci-poc/admin') ? 'text-indigo-600 bg-gray-50' : 'text-gray-700 hover:bg-gray-50 hover:text-indigo-600'
+                        isActive('/admin')
+                          ? 'text-indigo-600 bg-gray-50'
+                          : 'text-gray-700 hover:bg-gray-50 hover:text-indigo-600'
                       }`}
                     >
-                      <svg
+                      <RiAdminLine
                         className={`h-6 w-6 shrink-0 ${
-                          isActive('/carelynx-ci-poc/admin') ? 'text-indigo-600' : 'text-gray-400 group-hover:text-indigo-600'
+                          isActive('/admin')
+                            ? 'text-indigo-600'
+                            : 'text-gray-400 group-hover:text-indigo-600'
                         }`}
-                        fill='none'
-                        viewBox='0 0 24 24'
-                        strokeWidth='1.5'
-                        stroke='currentColor'
-                        aria-hidden='true'
-                      >
-                        <path
-                          strokeLinecap='round'
-                          strokeLinejoin='round'
-                          d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5'
-                        />
-                      </svg>
+                      />
                       Admin
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -310,7 +285,7 @@ const Sidebar: React.FC = ({ content }) => {
             <div className='h-6 w-px bg-gray-200 lg:hidden' aria-hidden='true'></div>
 
             <div className='flex flex-1 gap-x-4 self-stretch lg:gap-x-6'>
-              <form className='relative flex flex-1' action='#' method='GET'>
+              <div className='relative flex flex-1' action='#' method='GET'>
                 <label htmlFor='search-field' className='sr-only'>
                   Search
                 </label>
@@ -333,7 +308,7 @@ const Sidebar: React.FC = ({ content }) => {
                   type='search'
                   name='search'
                 />
-              </form>
+              </div>
               <div className='flex items-center gap-x-4 lg:gap-x-6'>
                 <button type='button' className='-m-2.5 p-2.5 text-gray-400 hover:text-gray-500'>
                   <span className='sr-only'>View notifications</span>
