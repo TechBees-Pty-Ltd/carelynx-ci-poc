@@ -35,9 +35,7 @@ const Activity: React.FC = () => {
               <div className='min-w-0 flex-1'>
                 <div>
                   <div className='text-sm'>
-                    <a href='#' className='font-medium text-gray-900'>
-                      Eduardo Benz
-                    </a>
+                    <a className='font-medium text-gray-900'>Eduardo Benz</a>
                   </div>
                   <p className='mt-0.5 text-sm text-gray-500'>Commented 6d ago</p>
                 </div>
@@ -79,13 +77,9 @@ const Activity: React.FC = () => {
               </div>
               <div className='min-w-0 flex-1 py-1.5'>
                 <div className='text-sm text-gray-500'>
-                  <a href='#' className='font-medium text-gray-900'>
-                    Hilary Mahy
-                  </a>
+                  <a className='font-medium text-gray-900'>Hilary Mahy</a>
                   {' assigned '}
-                  <a href='#' className='font-medium text-gray-900'>
-                    Kristin Watson
-                  </a>
+                  <a className='font-medium text-gray-900'>Kristin Watson</a>
                   <span className='whitespace-nowrap ms-2'>2d ago</span>
                 </div>
               </div>
@@ -120,16 +114,11 @@ const Activity: React.FC = () => {
               <div className='min-w-0 flex-1 py-0'>
                 <div className='text-sm leading-8 text-gray-500'>
                   <span className='mr-0.5'>
-                    <a href='#' className='font-medium text-gray-900'>
-                      Hilary Mahy
-                    </a>
+                    <a className='font-medium text-gray-900'>Hilary Mahy</a>
                     {' added tags '}
                   </span>
                   <span className='mr-0.5'>
-                    <a
-                      href='#'
-                      className='inline-flex items-center gap-x-1.5 rounded-full px-2 py-1 text-xs font-medium text-gray-900 ring-1 ring-inset ring-gray-200'
-                    >
+                    <a className='inline-flex items-center gap-x-1.5 rounded-full px-2 py-1 text-xs font-medium text-gray-900 ring-1 ring-inset ring-gray-200'>
                       <svg
                         className='h-1.5 w-1.5 fill-red-500'
                         viewBox='0 0 6 6'
@@ -139,10 +128,7 @@ const Activity: React.FC = () => {
                       </svg>
                       Bug
                     </a>
-                    <a
-                      href='#'
-                      className='inline-flex items-center gap-x-1.5 rounded-full px-2 py-1 text-xs font-medium text-gray-900 ring-1 ring-inset ring-gray-200'
-                    >
+                    <a className='inline-flex items-center gap-x-1.5 rounded-full px-2 py-1 text-xs font-medium text-gray-900 ring-1 ring-inset ring-gray-200'>
                       <svg
                         className='h-1.5 w-1.5 fill-indigo-500'
                         viewBox='0 0 6 6'
@@ -186,9 +172,7 @@ const Activity: React.FC = () => {
               <div className='min-w-0 flex-1'>
                 <div>
                   <div className='text-sm'>
-                    <a href='#' className='font-medium text-gray-900'>
-                      Jason Meyers
-                    </a>
+                    <a className='font-medium text-gray-900'>Jason Meyers</a>
                   </div>
                   <p className='mt-0.5 text-sm text-gray-500'>Commented 2h ago</p>
                 </div>

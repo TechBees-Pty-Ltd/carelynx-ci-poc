@@ -46,10 +46,7 @@ const Sidebar: React.FC = ({ content }) => {
                   <li>
                     <ul role='list' className='-mx-2 space-y-1'>
                       <li>
-                        <a
-                          href='#'
-                          className='group flex gap-x-3 rounded-md bg-gray-50 p-2 font-semibold leading-6 text-indigo-600'
-                        >
+                        <a className='group flex gap-x-3 rounded-md bg-gray-50 p-2 font-semibold leading-6 text-indigo-600'>
                           <svg
                             className='h-6 w-6 shrink-0 text-indigo-600'
                             fill='none'
@@ -90,10 +87,7 @@ const Sidebar: React.FC = ({ content }) => {
                         </Link>
                       </li>
                       <li>
-                        <a
-                          href='#'
-                          className='group flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-indigo-600'
-                        >
+                        <a className='group flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-indigo-600'>
                           <svg
                             className='h-6 w-6 shrink-0 text-gray-400 group-hover:text-indigo-600'
                             fill='none'
@@ -112,10 +106,7 @@ const Sidebar: React.FC = ({ content }) => {
                         </a>
                       </li>
                       <li>
-                        <a
-                          href='#'
-                          className='group flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-indigo-600'
-                        >
+                        <a className='group flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-indigo-600'>
                           <svg
                             className='h-6 w-6 shrink-0 text-gray-400 group-hover:text-indigo-600'
                             fill='none'
@@ -230,10 +221,7 @@ const Sidebar: React.FC = ({ content }) => {
                 </ul>
               </li>
               <li className='mt-auto'>
-                <a
-                  href='#'
-                  className='group -mx-2 flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-indigo-600'
-                >
+                <a className='group -mx-2 flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-gray-700 hover:bg-gray-50 hover:text-indigo-600'>
                   <svg
                     className='h-6 w-6 shrink-0 text-gray-400 group-hover:text-indigo-600'
                     fill='none'
@@ -379,7 +367,6 @@ const Sidebar: React.FC = ({ content }) => {
                       tabIndex='-1'
                     >
                       <a
-                        href='#'
                         className='block px-3 py-1 leading-6 text-gray-900'
                         role='menuitem'
                         tabIndex='-1'
@@ -388,7 +375,6 @@ const Sidebar: React.FC = ({ content }) => {
                         Your profile
                       </a>
                       <a
-                        href='#'
                         className='block px-3 py-1 leading-6 text-gray-900'
                         role='menuitem'
                         tabIndex='-1'
